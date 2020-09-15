@@ -19,9 +19,26 @@
           <h2>You are requesting stock information</h2>
 		  <form id = 'form1' method = 'post' action ='form_action' >
 			<p>
-		   Enter ticker code here: <input type='text' name='form_input' />
-		   </p>
-		   <input type ='submit' value='Submit your answer' />
+		   Ticker code: <input type='text' name='ticker_code' />
+            </p>
+              <div>
+               <input type = "checkbox" name= 'opening' />
+                Opening price
+              </div>
+      <!--        <div>
+                <input type="checkbox" name='opening_a' />
+                Opening price (adjusted)
+              </div> -->
+              <div>
+               <input type = "checkbox" checked="checked" name= 'closing' />
+                Closing price
+              </div>
+              <div>
+               <input type = "checkbox" name= 'closing_a' />
+                Closing price (adjusted)
+              </div>
+		   <input type ='submit' value='Get data' />
+            </form>
         </div>
       </div>
     </div>
